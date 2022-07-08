@@ -16,8 +16,11 @@ Bu standart control flowdur. Application kendi akislarinin sahibidir.
 
 IOC , bir applicationin sahip oldugu akis kontrolunu elinden birakmasi, karsi tarafa vermesidir. Temelde frameworkler tarafindan uygulanan bir mekanizmadir.
 Dolayisiyla Framework bir application tarafgindan extend edildiginde, calistirilip ayaga kaldirildigi zaman, kontrolu ele alir, ve hangi nesneleri nasil ve ne zaman olusturacagini,
-hangi objeleri olusturacagini, objeler arasinda nasil dependenciler oldugunu ve nasil yonetecinigini (DI ile) ve hangi exceptionlari olustracagini, hangi eventleri firlatacagini butun bunlara karar veren yapi Framework'in kendisidir. 
-Iste buna IOC denir .
+hangi objeleri olusturacagini, objeler arasinda nasil dependenciler oldugunu ve nasil yonetecinigini Dependency Injection (DI) ve hangi exceptionlari olustracagini, 
+hangi eventleri firlatacagini butun bunlara karar veren yapi Framework'in kendisidir. 
+Iste buna IoC denir .
+
+IoC, Spring'de kullanilan temel prensiptir ve Spring MVC, Security, Core veya DAO, ne entegrasyonu kullanilirsa kullanilsin, IoC prensibiyle calisacaktir.
 
 **Dependency Injection (DI)**: Spring’in kendi dokumantasyonu da DI ile IoC’yi ayni gorme egilimindedir. DI , IoC ile implemente edilir.
 Yani objeleri olustur ve bu objeleri baska bir objeye injecte eder. Bunun icin kontrolun bu objeleri olusturan yapida olmasi lazim gerekir, yani Springde olmasi lazim. 
@@ -28,4 +31,7 @@ eventler olusturmak, Aspect Orieented Programming (AOP), butun bunlar herhalukar
 
 ---
 
-#### Q2 
+#### Q2 - What are Spring Bean Scopes?
+
+---
+
