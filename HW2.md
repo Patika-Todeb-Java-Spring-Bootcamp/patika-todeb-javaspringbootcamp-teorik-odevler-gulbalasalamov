@@ -6,9 +6,10 @@
 
 ---
 
-**Inversion of Control (IoC)**: Kontrolun ters cevrilmesi, el degistirmesi anlamaini tasir. 
-Ancak bu kavrami anlamak icin once *control flow*'un ne demek oldugunu bilmek gerekir. 
-Kontrolden kasit akisin kontrolunu yapmak, bir uygulamadaki akisin adimlarini, ne zaman neyi nerede cagiracagimizi, bunlari kontrol etmektir.
+**Inversion of Control (IoC)**: 
+Kontrolun ters cevrilmesi, el degistirmesi anlamaini tasir. 
+Ancak bu kavrami anlamak icin once *kontrol akisi* (control flow)'un ne demek oldugunu bilmek gerekir. 
+Kontrolden kasit bir uygulamadaki akisin adimlarini, ne zaman neyi nerede cagiracagimizi ve bunlari kontrol edebilmektir.
 
 Uygulamalar kendi akislarini kontrol eder. Ne zaman bir obje olusturacagini, ne zaman o objenin uzerinde methodlar cagiracagini, exceptionlar firlatacagini, sequence halinde bilir. 
 Bu standart control flowdur. Application kendi akislarinin sahibidir.
@@ -18,7 +19,12 @@ Dolayisiyla Framework bir application tarafgindan extend edildiginde, calistiril
 hangi objeleri olusturacagini, objeler arasinda nasil dependenciler oldugunu ve nasil yonetecinigini (DI ile) ve hangi exceptionlari olustracagini, hangi eventleri firlatacagini butun bunlara karar veren yapi Framework'in kendisidir. 
 Iste buna IOC denir .
 
-sdsd
+**Dependency Injection (DI)**: Spring’in kendi dokumantasyonu da DI ile IoC’yi ayni gorme egilimindedir. DI , IoC ile implemente edilir.
+Yani objeleri olustur ve bu objeleri baska bir objeye injecte eder. Bunun icin kontrolun bu objeleri olusturan yapida olmasi lazim gerekir, yani Springde olmasi lazim. 
+Dolayisiyla DI, IoC ile basarilir. Bu baglamda IoC , DI‘ in arka tarafindaki felsefedir. DI, IoC ile elde ettigimiz seylerden birisidir.
+
+Ancak not etmek gerekir ki birbiriyle ayni seyler degildir. Biz DI olmasa bile IoC ile farkli yapilari implemente edebiliriz. Ama sunun da farkinda olmak gerekir ki Spring’den bahsettigimiz zaman objenin lifecycleini yonetmek, 
+eventler olusturmak, Aspect Orieented Programming (AOP), butun bunlar herhalukarda obje olusturup onlari birbirine gecirmeyi , wiringi, gerektirdigi icin cogunlukla insanlar IoC dendigi zaman DI olarak algilamaktadirlar,, her nakadar ayni olmasada.
 
 ---
 
