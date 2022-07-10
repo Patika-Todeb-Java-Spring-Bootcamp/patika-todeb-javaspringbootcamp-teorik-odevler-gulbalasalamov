@@ -8,7 +8,7 @@
 
 **Inversion of Control (IoC)**: 
 Kontrolun ters cevrilmesi, el degistirmesi anlamaini tasir. 
-Ancak bu kavrami anlamak icin once *kontrol akisi* (control flow)'un ne demek oldugunu bilmek gerekir. 
+Ancak bu kavrami anlamak icin once kontrol akisinin (control flow) ne demek oldugunu bilmek gerekir. 
 Kontrolden kasit bir uygulamadaki akisin adimlarini, ne zaman neyi nerede cagiracagimizi ve bunlari kontrol edebilmektir.
 
 Uygulamalar kendi akislarini kontrol eder. Ne zaman bir obje olusturacagini, ne zaman o objenin uzerinde methodlar cagiracagini, exceptionlar firlatacagini, sequence halinde bilir. 
