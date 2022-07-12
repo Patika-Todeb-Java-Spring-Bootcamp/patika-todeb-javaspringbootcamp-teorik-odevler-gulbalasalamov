@@ -34,4 +34,4 @@ eventler olusturmak, Aspect Orieented Programming (AOP), butun bunlar herhalukar
 #### Q2 - What are Spring Bean Scopes?
 
 ---
-
+Scopes
