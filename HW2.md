@@ -15,7 +15,7 @@ Uygulamalar kendi akislarini kontrol eder. Ne zaman bir obje olusturacagini, ne 
 Bu standart control flowdur. Application kendi akislarinin sahibidir.
 
 IOC , bir applicationin sahip oldugu akis kontrolunu elinden birakmasi, karsi tarafa vermesidir. Temelde frameworkler tarafindan uygulanan bir mekanizmadir.
-Dolayisiyla Framework bir application tarafgindan extend edildiginde, calistirilip ayaga kaldirildigi zaman, kontrolu ele alir, ve hangi nesneleri nasil ve ne zaman olusturacagini,
+Dolayisiyla Framework bir application tarafindan extend edildiginde, calistirilip ayaga kaldirildigi zaman, kontrolu ele alir, ve hangi nesneleri nasil ve ne zaman olusturacagini,
 hangi objeleri olusturacagini, objeler arasinda nasil dependenciler oldugunu ve nasil yonetecinigini Dependency Injection (DI) ve hangi exceptionlari olustracagini, 
 hangi eventleri firlatacagini butun bunlara karar veren yapi Framework'in kendisidir. 
 Iste buna IoC denir .
@@ -34,4 +34,9 @@ eventler olusturmak, Aspect Orieented Programming (AOP), butun bunlar herhalukar
 #### Q2 - What are Spring Bean Scopes?
 
 ---
-Scopes
+Spring Bean Scopes, bize bean oluşturma ve uzerlerinde daha ayrintili bir kontrole sahip olma imkani saglar. Kapsam tanimlayicilar olarak ifade edebiliriz. 
+
+Spring Bean Scopes kavramindan once bean'lerin Spring icindeki terminolojisini bilmekte de fayda vardir. Spring’in IoC containeri tarafindan yonetilen objelere beans deriz. 
+Spring IoC bean objelerini olusturur, assemble eder yani bir araya getirir, wire eder, ve bir sekilde hayat dongulerini yonetir. Spring’in yonetecegi bean’leri ve dependencyleriyle alakali bilgileri, configuration meta data ile birlikte biz container’a saglariz. 
+Container’da bu configuration meta datayi kullanarak bizim isimizi gorur. Spring tarafindan olusturulmamis objeler, beanler Spring tarafindan yonetilmezler.  
+
