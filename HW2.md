@@ -79,4 +79,8 @@ XML tabanli konfigurasyonda <context: component-scan> taginin yaptigi isi yapar.
 
 https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/SpringBootApplication.html
 
+----
 
+#### Q4 -
+
+----
