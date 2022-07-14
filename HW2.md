@@ -55,12 +55,24 @@ Scope olayi ise declare edilmis bir beanden hangi durumlarda nasil obje olusturu
 | Protoype | Bean’e istek geldiğinde oluşturulur. Her istekte farklı bir instance oluşturulur.    |
 | Request | Web uygulamaları için kullanılır. Her HTTP isteği geldiğinde instance oluşturulur.   | 
 | Session | Web uygulamaları için kullanılır. Her HTTP session oluştuğunda instance oluşturulur. |
+| Application | ssd |
 | WebSocket | WebSocket'e sahip instancelardir. Tipik olarak Singleton ozellik gosterirler.        |
+
+https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-scopes
 
 ---
 
 #### Q3 - What does @SpringBootApplication do?
 
 ----
+
+Bu anotasyon @Configuration,  @EnbaleAutoConfiguration, @ComponentScan  anotasyonlarının üçünü de içeren temel bir anotasyondur.
+
+Uygulamalarin beanlerini tanimlandirip yapilandirir, beanleri otomatik tarayip bulur ve ekstra konfigurasyonlari yapar 
+
+ - @Configuration
+
+
+https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/SpringBootApplication.html
 
 
