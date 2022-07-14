@@ -57,3 +57,10 @@ Scope olayi ise declare edilmis bir beanden hangi durumlarda nasil obje olusturu
 | Session | Web uygulamaları için kullanılır. Her HTTP session oluştuğunda instance oluşturulur. |
 | WebSocket | WebSocket'e sahip instancelardir. Tipik olarak Singleton ozellik gosterirler.        |
 
+---
+
+#### Q3 - What does @SpringBootApplication do?
+
+----
+
+
