@@ -66,11 +66,15 @@ https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#be
 
 ----
 
-Bu anotasyon @Configuration,  @EnbaleAutoConfiguration, @ComponentScan  anotasyonlarının üçünü de içeren temel bir anotasyondur.
+Bu anotasyon @Configuration,  @EnableAutoConfiguration, @ComponentScan  anotasyonlarının üçünü de içeren temel bir anotasyondur.
 
-Uygulamalarin beanlerini tanimlandirip yapilandirir, beanleri otomatik tarayip bulur ve ekstra konfigurasyonlari yapar 
+Uygulamalarin beanlerini tanimlandirip yapilandirir, beanleri otomatik tarayip bulur ve ekstra konfigurasyonlari yapar.
 
- - @Configuration
+ - `@Configuration`: Tanimlandigi sinifin bean tanimlamalari icin kaynak oldugunu ve Spring IoC container tarafindan kullanilacagini belirtir.
+ - `@EnableAutoConfiguration`: Spring Boot'un jar dependency, classpath ve bizler tarafindan tanimlanmis objeleri otomatik olarak olusturup kaydetmesini saglar.
+ - `@ComponentScan`: Spring'in Spring tarafindan yonetilen bilesenleri bulmasi icin kullanilir.
+XML tabanli konfigurasyonda <context: component-scan> taginin yaptigi isi yapar. @Autowired annotationlarin calismasi icin eklenir. Boylece configuration, controller, service ve dahasi bilesenler aranir. 
+@ComponentScan anotasyonu @Configured anatasyonuyla beraber kullanilir ve aranacak bilesenlerin packagelarinin yeri gosterilir.
 
 
 https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/SpringBootApplication.html
