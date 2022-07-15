@@ -94,6 +94,18 @@ Spring Boot'un esas aldigi hedefler:
 - Gömülü sistem sunucuları, guvenlik, durum kontrolleri vb buyuk projeler icin kullanisli ozellikler saglamasi
 - XML tabanli yapilandirma ve konfigurasyona ihtiyac duymamak 
 
+Daha derinlemesine bakarsak:
+
+- Java -jar komutuyla calistirilabilecek standalone bagimsiz uygulamalar yaratmak,
+- Tomcat, Jetty vb gomullu sunucularin yardimiyla web uygulamarini test edebilmek,
+- Maven konfigurasyonunu basitlestirmek icin varsayilan starter bir pom.xml dosyasi ile gelmesi
+- Production-ready ozellikleri barindirmasi
+- XML ayarlarina gerek duymamak
+- Gelistirme ve test icin CLI tool icermesi
+- Bir cok plug-in'e sahip olmasi
+- Boilerplate kodlar, XML konfigurasyon ve anastosyanlarini minimize etmesi
+- Uretkenligi artirma
+
 Özetlemek gerekirse Spring Boot, standart Spring Framework'unun tüm işlevlerini içerir ve aynı zamanda uygulama geliştirmeyi çok daha kolay hale getirir. 
 Spring ile karşılaştırıldığında, tüm Spring Boot öznitelikleri otomatik olarak yapılandırıldığından, bir uygulamayı çok daha kısa sürede hazır hale getirip çalıştırabiliriz.
 
