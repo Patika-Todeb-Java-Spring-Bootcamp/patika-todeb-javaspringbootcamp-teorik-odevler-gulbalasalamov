@@ -178,7 +178,7 @@ Spring Boot frameworkleri sayesinde developerlar development suresini ve sarfedi
 
 ----
 
-#### Q7 - Why to use VCS?
+#### Q8 - Why to use VCS?
 
 ----
 
