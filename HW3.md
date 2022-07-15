@@ -176,3 +176,27 @@ Spring Boot'un ise en temel farki Autoconfiguration (otomatik konfigurasyon) ile
 
 Spring Boot frameworkleri sayesinde developerlar development suresini ve sarfedilen eforu azaltabilir, uretkenligi artirabilir.
 
+----
+
+#### Q7 - Why to use VCS?
+
+----
+
+Version Control System (VCS) yazılımların versiyonlarının takip edildiği sürüm takip sistemidir.
+Git bunlardan en populer olanıdır. Git, yazılım geliştirme sırasında kaynak koddaki değişiklikleri izler.
+Programcılar arasındaki çalışmaları koordine etmek için tasarlanmıştır. 
+Hız, veri bütünlüğü ve dağıtılmış, doğrusal olmayan iş akışları için destek içerir.
+
+Git bir yazılım iken GitHub ve GitLab ornegin 
+Git hizmeti verebilen web tabanlı grafik arayüzü olan bir Git depo barındırma hizmetidir.
+
+GitHub vb servisler kullanmak Git deneyimini artirir ve ekstra avantajlar da saglar:
+
+- Kisisel calisma ve projeleri sergilemek, genis kitlelere yayilmak
+- Acik kaynakli projelere destek olmak
+- Var olan proje, bilgi ve dokumanlara kolay erisim
+- Markdown ile dokumantayon
+
+
+
+
