@@ -1,4 +1,4 @@
-### HOMEWORK ANSWERS RELATED TO SPRING & SPRING BOOT CONCEPTS 
+### - Homework3 - Spring & Spring Boot Concepts -  
 
 ---
 
@@ -94,7 +94,7 @@ Spring Boot'un esas aldigi hedefler:
 - Gömülü sistem sunucuları, guvenlik, durum kontrolleri vb buyuk projeler icin kullanisli ozellikler saglamasi
 - XML tabanli yapilandirma ve konfigurasyona ihtiyac duymamak 
 
-Daha derinlemesine bakarsak:
+Spring Boot'un Spring'e kiyasla avantajlarina daha derinlemesine bakarsak:
 
 - Java -jar komutuyla calistirilabilecek standalone bagimsiz uygulamalar yaratmak,
 - Tomcat, Jetty vb gomullu sunucularin yardimiyla web uygulamarini test edebilmek,
@@ -116,4 +116,14 @@ https://spring.getdocs.org/en-US/spring-boot-docs/getting-started/getting-starte
 #### Q7 - What is the primary difference between Spring and Spring Boot?
 
 ----
+
+Spring, Java EE'ye gore daha lightweight bir uygulama gelistirme framework'udur. 
+Spring, mimari olarak bakildigi zaman frameworkleri iceren frameworklerden olusur. Uygulama gelistirmek icin bir cok framework bulunur (JSP, Hibernate vb)
+
+Spring Boot ise Spring tabanli bir framework olup esas olarak REST API gelistirmek icin kullanilir.
+
+Spring'in Java EE'den en temel farki getirdigi Dependency Injection (DI) ozelligidir. 
+Spring Boot'un ise en temel farki Autoconfiguration (otomatik konfigurasyon) ile Spring'in on yuklemesini otomatik yapilandirmasidir. 
+
+Spring Boot frameworkleri sayesinde developerlar development suresini ve sarfedilen eforu azaltabilir, uretkenligi artirabilir.
 
