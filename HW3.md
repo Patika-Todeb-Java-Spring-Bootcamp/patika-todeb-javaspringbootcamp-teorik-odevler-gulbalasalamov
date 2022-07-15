@@ -141,6 +141,27 @@ Singletonlar multi-thread servis objeleri icin siklikla kullanilir. Web ortamlar
 
 ----
 
+#### Q6 - Explain @RestController annotation in Sprint boot?
+
+@RestController anatasyonu `@Controller` ve `@ResponseBody` anatasyonlarinin birlesimidir.
+Controller, Spring icerisinde uzun zamandir bulunan bir yapi. RestController ise Spring 4.0 ile geldi.
+Temel amaci ilgili sınıftaki bütün metodların birer REST EndPoint'lerini (servis noktası) uretmeyi saglamak.
+Kolayligi ise bu islem icin Controller ve ResponseBody notasyonlarini tek seferde vermesi.
+Bu sayede REST controller olmasını isteyeceğimiz her metoda @ResponseBody yazmaktan da kurtulmuş oluyoruz.
+
+RestController sinifinin metotlarinda kullanilan anatasyonlar
+
+- @GetMapping : Get istegi
+- @PostMapping : Post istegi
+- @DeleteMapping : Delete istegi 
+- @PathVariable : Methodlara gecilen parametreler
+
+RestController donen datanin direkt JSON/XML olmasini otomatik saglayabiliyor. 
+
+https://docs.spring.io/spring-boot/docs/2.0.9.RELEASE/reference/html/getting-started-first-application.html#getting-started-first-application-annotations
+
+----
+
 #### Q7 - What is the primary difference between Spring and Spring Boot?
 
 ----
