@@ -210,6 +210,8 @@ GitHub vb servisler kullanmak Git deneyimini artirir ve ekstra avantajlar da sag
 
 #### Q9 - What are SOLID Principles ? Give sample usages in Java ?
 
+----
+
 5 SOLID prensipi vardir.
 
 | Prensip                                   | Aciklama                                                                                                                        |
@@ -224,6 +226,8 @@ GitHub vb servisler kullanmak Git deneyimini artirir ve ekstra avantajlar da sag
 
 #### Q10 -  What is RAD model ?
 
+----
+
 Rapid Application Development (RAD) bir yazılım geliştirme yöntemidir. Hızlı uygulama geliştirme yollarindan biridir.
 
 Çok fazla detaya girilmeden, hızlı şekilde çalışan bir uygulama oluşturma amacıyla benimsenen bu yöntem için kullanılan birçok araç ve kütüphane bulunmaktadır.
@@ -232,4 +236,19 @@ Spring Boot, Spring Framework'e RAD özelliğini sağlayan bir Spring modülüd�
 Minimum Spring konfigürasyonuna ihtiyaç duyduğu için çalıştırılabilen bağımsız bir Spring tabanlı uygulama oluşturmak için kullanılır.
 
 ----
+
+#### Q11 - What is Spring Boot starter ? How is it useful ?
+
+----
+
+Starter dependency tanımlayıcısıdır ve uygulamalara eklenebilecek dependency'leri arayip bizi teker teker ekleme zahmetinden kurtarir.
+Spring Boot Starter ismi olarak `spring-boot-starter` i kullanir.
+
+Ornegin uygulamamizda Spring ve verilere erisim icin JPA kullanmak istiyorsak, pom.xml dosyasina `spring-boot-starters-jpa` ekleriz.
+
+Butun starter isim ve dependency'leri icin: 
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using.build-systems.starters
+
+
+
 
