@@ -62,14 +62,14 @@ Spring tarafindan olusturulmamis beanler Spring tarafindan yonetilmezler.
 
 Scope olayi ise declare edilmis bir beanden hangi durumlarda nasil obje olusturulacagini belirlemek icin kullanilir.
 
-| Scope | Açıklama                                                                             |
-|----|--------------------------------------------------------------------------------------|
-| Singleton | Varsayılan olarak her bean Singleton’dur. Bu Bean’den sadece bir tane üretilir.      |
-| Protoype | Bean’e istek geldiğinde oluşturulur. Her istekte farklı bir instance oluşturulur.    |
-| Request | Web uygulamaları için kullanılır. Her HTTP isteği geldiğinde instance oluşturulur.   | 
-| Session | Web uygulamaları için kullanılır. Her HTTP session oluştuğunda instance oluşturulur. |
-| Application | ssd |
-| WebSocket | WebSocket'e sahip instancelardir. Tipik olarak Singleton ozellik gosterirler.        |
+| Scope | Açıklama                                                                                                                                                                                                                            |
+|----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Singleton | Varsayılan olarak her bean Singleton’dur. Bu Bean’den sadece bir tane üretilir.                                                                                                                                                     |
+| Protoype | Bean’e istek geldiğinde oluşturulur. Her istekte farklı bir instance oluşturulur.                                                                                                                                                   |
+| Request | Web uygulamaları için kullanılır. Her HTTP isteği geldiğinde instance oluşturulur.                                                                                                                                                  | 
+| Session | Web uygulamaları için kullanılır. Her HTTP session oluştuğunda instance oluşturulur.                                                                                                                                                |
+| Application | Web uygulamasi calisirken bir instance olarak olusur. Tipik olarak Singletona benzer. Ancak farki odur ki Singleton objeler ApplicationContext ile olusturulurken scope'u Application olan beanler ServletContext ile ayaga kalkar. |
+| WebSocket | WebSocket'e sahip instancelardir. Tipik olarak Singleton ozellik gosterirler.                                                                                                                                                       |
 
 https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-scopes
 
@@ -291,5 +291,15 @@ Misc:
 
 ---
 
+#### Q13 -  What is Spring Boot dependency management?
 
+Spring Dependency'lerinin yonetimi :D
 
+---
+
+#### Q14 -  What is Spring Boot Actuator?
+
+---
+
+Spring Boot, uygulamalar oluşturmanıza yardımcı olur. Spring Boot Actuator, bunları productionda çalıştırmanıza yardımcı olur. 
+Spring Boot Actuator bir production ortamında uygulamayi izlemeyi, yönetmeyi ve iç incelemeler yapmayi kolaylaştırir.
