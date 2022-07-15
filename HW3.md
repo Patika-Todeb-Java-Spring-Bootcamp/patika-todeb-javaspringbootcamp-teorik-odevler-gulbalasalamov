@@ -81,6 +81,20 @@ https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/aut
 
 ----
 
-#### Q4 -
+#### Q4 - Why Spring Boot over Spring?
 
 ----
+
+Spring Boot, production seviyesinde Spring tabanlı uygulamalar oluşturmayı kolaylaştırır ve çok az Spring konfigürasyonuna ihtiyaç duyar.
+
+Spring Boot'un esas aldigi hedefler:
+
+- Tüm Spring geliştirmeleri için daha hızlı ve geniş çapta erişilebilir bir başlangıç deneyimi sağlamak,
+- Varsayılan gereklilik ve dependency'lerin optimize edilerek eklenmesi, 
+- Gömülü sistem sunucuları, guvenlik, durum kontrolleri vb buyuk projeler icin kullanisli ozellikler saglamasi
+- XML tabanli yapilandirma ve konfigurasyona ihtiyac duymamak 
+
+Özetlemek gerekirse Spring Boot, standart Spring Framework'unun tüm işlevlerini içerir ve aynı zamanda uygulama geliştirmeyi çok daha kolay hale getirir. 
+Spring ile karşılaştırıldığında, tüm Spring Boot öznitelikleri otomatik olarak yapılandırıldığından, bir uygulamayı çok daha kısa sürede hazır hale getirip çalıştırabiliriz.
+
+https://spring.getdocs.org/en-US/spring-boot-docs/getting-started/getting-started-introducing-spring-boot.html
