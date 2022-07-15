@@ -220,8 +220,16 @@ GitHub vb servisler kullanmak Git deneyimini artirir ve ekstra avantajlar da sag
 | **I**nterface Segregation Principle (ISP) | Herşeyi ihtiva eden interface sınıflar yerine belli bir işlemi yapan interface sınıflar oluşturulmalıdır.                       |
 | **D**ependency Inversion Principle (DIP)  | Bağımlılıklar soyut sınıflara doğru olmalıdır.                                                                                  |
 
-
 ----
 
+#### Q10 -  What is RAD model ?
 
+Rapid Application Development (RAD) bir yazılım geliştirme yöntemidir. Hızlı uygulama geliştirme yollarindan biridir.
+
+Çok fazla detaya girilmeden, hızlı şekilde çalışan bir uygulama oluşturma amacıyla benimsenen bu yöntem için kullanılan birçok araç ve kütüphane bulunmaktadır.
+
+Spring Boot, Spring Framework'e RAD özelliğini sağlayan bir Spring modülüdür. 
+Minimum Spring konfigürasyonuna ihtiyaç duyduğu için çalıştırılabilen bağımsız bir Spring tabanlı uygulama oluşturmak için kullanılır.
+
+----
 
