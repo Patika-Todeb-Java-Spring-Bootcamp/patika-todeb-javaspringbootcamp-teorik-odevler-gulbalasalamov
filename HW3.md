@@ -1,4 +1,13 @@
-### - Homework3 - Spring & Spring Boot Concepts -  
+### Homework 3 
+
+This homework covers answers for the questions about the following topics:
+
+- GIT
+- Fundamentals of Spring and Spring Boot
+- Comparison of Spring and Spring Boot
+- Spring Boot annotations
+
+Answers to questions are in Turkish.
 
 ---
 
