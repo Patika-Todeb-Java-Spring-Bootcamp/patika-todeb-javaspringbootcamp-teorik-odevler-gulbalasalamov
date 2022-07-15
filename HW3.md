@@ -1,4 +1,4 @@
-### Homework 3 
+### Homework 3
 
 This homework covers answers for the questions about the following topics:
 
@@ -15,30 +15,34 @@ Answers to questions are in **Turkish**.
 
 ---
 
-**Inversion of Control (IoC)**: 
-Kontrolun ters cevrilmesi, el degistirmesi anlamaini tasir. 
-Ancak bu kavrami anlamak icin once kontrol akisinin (control flow) ne demek oldugunu bilmek gerekir. 
+**Inversion of Control (IoC)**:
+Kontrolun ters cevrilmesi, el degistirmesi anlamaini tasir.
+Ancak bu kavrami anlamak icin once kontrol akisinin (control flow) ne demek oldugunu bilmek gerekir.
 Kontrolden kasit bir uygulamadaki akisin adimlarini, ne zaman neyi nerede cagiracagimizi ve bunlari kontrol edebilmektir.
 
-Uygulamalar kendi akislarini kontrol eder. Ne zaman bir obje olusturacagini, ne zaman o objenin uzerinde methodlar cagiracagini, exceptionlar firlatacagini, sequence halinde bilir. 
+Uygulamalar kendi akislarini kontrol eder. Ne zaman bir obje olusturacagini, ne zaman o objenin uzerinde methodlar cagiracagini, exceptionlar
+firlatacagini, sequence halinde bilir.
 Bu standart control flowdur. Application kendi akislarinin sahibidir.
 
-IOC , bir applicationin sahip oldugu akis kontrolunu elinden birakmasi, karsi tarafa vermesidir. 
+IOC , bir applicationin sahip oldugu akis kontrolunu elinden birakmasi, karsi tarafa vermesidir.
 Temelde frameworkler tarafindan uygulanan bir mekanizmadir.
-Dolayisiyla Framework bir application tarafindan extend edildiginde, calistirilip ayaga kaldirildigi zaman, kontrolu ele alir, ve hangi nesneleri nasil ve ne zaman olusturacagini,
-hangi objeleri olusturacagini, objeler arasinda nasil dependenciler oldugunu ve nasil yonetecinigini Dependency Injection (DI) ve hangi exceptionlari olustracagini, 
-hangi eventleri firlatacagini butun bunlara karar veren yapi Framework'in kendisidir. 
+Dolayisiyla Framework bir application tarafindan extend edildiginde, calistirilip ayaga kaldirildigi zaman, kontrolu ele alir, ve hangi nesneleri
+nasil ve ne zaman olusturacagini,
+hangi objeleri olusturacagini, objeler arasinda nasil dependenciler oldugunu ve nasil yonetecinigini Dependency Injection (DI) ve hangi exceptionlari
+olustracagini,
+hangi eventleri firlatacagini butun bunlara karar veren yapi Framework'in kendisidir.
 Iste buna IoC denir .
 
-IoC, Spring'de kullanilan temel prensiptir ve Spring MVC, Security, Core veya DAO, ne entegrasyonu kullanilirsa kullanilsin, IoC prensibiyle calisacaktir.
+IoC, Spring'de kullanilan temel prensiptir ve Spring MVC, Security, Core veya DAO, ne entegrasyonu kullanilirsa kullanilsin, IoC prensibiyle
+calisacaktir.
 
 **Dependency Injection (DI)**: Spring’in kendi dokumantasyonu da DI ile IoC’yi ayni gorme egilimindedir. DI , IoC ile implemente edilir.
-Yani objeleri olustur ve bu objeleri baska bir objeye injecte eder. 
-Bunun icin kontrolun bu objeleri olusturan yapida olmasi lazim gerekir, yani Springde olmasi lazim. 
+Yani objeleri olustur ve bu objeleri baska bir objeye injecte eder.
+Bunun icin kontrolun bu objeleri olusturan yapida olmasi lazim gerekir, yani Springde olmasi lazim.
 Dolayisiyla DI, IoC ile basarilir. Bu baglamda IoC , DI‘ in arka tarafindaki felsefedir. DI, IoC ile elde ettigimiz seylerden birisidir.
 
-Ancak not etmek gerekir ki birbiriyle ayni seyler degildir. Biz DI olmasa bile IoC ile farkli yapilari implemente edebiliriz. 
-Ama sunun da farkinda olmak gerekir ki Spring’den bahsettigimiz zaman objenin lifecycleini yonetmek, eventler olusturmak, 
+Ancak not etmek gerekir ki birbiriyle ayni seyler degildir. Biz DI olmasa bile IoC ile farkli yapilari implemente edebiliriz.
+Ama sunun da farkinda olmak gerekir ki Spring’den bahsettigimiz zaman objenin lifecycleini yonetmek, eventler olusturmak,
 Aspect Orieented Programming (AOP), butun bunlar herhalukarda obje olusturup onlari birbirine gecirmeyi,
 wiringi, gerektirdigi icin cogunlukla insanlar IoC dendigi zaman DI olarak algilamaktadirlar, her nakadar ayni olmasada.
 
@@ -47,16 +51,16 @@ wiringi, gerektirdigi icin cogunlukla insanlar IoC dendigi zaman DI olarak algil
 #### Q2 - What are Spring Bean Scopes?
 
 ---
-Spring bize bean oluşturma ve beanlerin yasam dongulerini kontrolmek icin yetkin bir kontrole sahip olma imkani verir. 
+Spring bize bean oluşturma ve beanlerin yasam dongulerini kontrolmek icin yetkin bir kontrole sahip olma imkani verir.
 
-Scopes kavramindan once Spring Framework'unde bean'in ne demek oldugunu kavramakta fayda vardir. 
-Spring’in IoC containeri tarafindan yonetilen objelere `bean` deriz. 
-Spring IoC bean objelerini olusturur, assemble eder yani bir araya getirir, wire eder, ve bir sekilde hayat dongulerini yonetir. 
-Spring’in yonetecegi bean’leri ve dependencyleriyle alakali bilgileri, configuration meta data ile birlikte biz container’a saglariz. 
-Container’da bu configuration meta datayi kullanarak bizim islerimizi gorur. 
+Scopes kavramindan once Spring Framework'unde bean'in ne demek oldugunu kavramakta fayda vardir.
+Spring’in IoC containeri tarafindan yonetilen objelere `bean` deriz.
+Spring IoC bean objelerini olusturur, assemble eder yani bir araya getirir, wire eder, ve bir sekilde hayat dongulerini yonetir.
+Spring’in yonetecegi bean’leri ve dependencyleriyle alakali bilgileri, configuration meta data ile birlikte biz container’a saglariz.
+Container’da bu configuration meta datayi kullanarak bizim islerimizi gorur.
 Spring tarafindan olusturulmamis beanler Spring tarafindan yonetilmezler.
 
-Scope olayi ise declare edilmis bir beanden hangi durumlarda nasil obje olusturulacagini belirlemek icin kullanilir. 
+Scope olayi ise declare edilmis bir beanden hangi durumlarda nasil obje olusturulacagini belirlemek icin kullanilir.
 
 | Scope | Açıklama                                                                             |
 |----|--------------------------------------------------------------------------------------|
@@ -75,16 +79,17 @@ https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#be
 
 ----
 
-Bu anotasyon @Configuration,  @EnableAutoConfiguration, @ComponentScan  anotasyonlarının üçünü de içeren temel bir anotasyondur.
+Bu anotasyon @Configuration, @EnableAutoConfiguration, @ComponentScan anotasyonlarının üçünü de içeren temel bir anotasyondur.
 
 Uygulamalarin beanlerini tanimlandirip yapilandirir, beanleri otomatik tarayip bulur ve ekstra konfigurasyonlari yapar.
 
- - `@Configuration`: Tanimlandigi sinifin bean tanimlamalari icin kaynak oldugunu ve Spring IoC container tarafindan kullanilacagini belirtir.
- - `@EnableAutoConfiguration`: Spring Boot'un jar dependency, classpath ve bizler tarafindan tanimlanmis objeleri otomatik olarak olusturup kaydetmesini saglar.
- - `@ComponentScan`: Spring'in Spring tarafindan yonetilen bilesenleri bulmasi icin kullanilir.
-XML tabanli konfigurasyonda <context: component-scan> taginin yaptigi isi yapar. @Autowired annotationlarin calismasi icin eklenir. Boylece configuration, controller, service ve dahasi bilesenler aranir. 
-@ComponentScan anotasyonu @Configured anatasyonuyla beraber kullanilir ve aranacak bilesenlerin packagelarinin yeri gosterilir.
-
+- `@Configuration`: Tanimlandigi sinifin bean tanimlamalari icin kaynak oldugunu ve Spring IoC container tarafindan kullanilacagini belirtir.
+- `@EnableAutoConfiguration`: Spring Boot'un jar dependency, classpath ve bizler tarafindan tanimlanmis objeleri otomatik olarak olusturup
+  kaydetmesini saglar.
+- `@ComponentScan`: Spring'in Spring tarafindan yonetilen bilesenleri bulmasi icin kullanilir.
+  XML tabanli konfigurasyonda <context: component-scan> taginin yaptigi isi yapar. @Autowired annotationlarin calismasi icin eklenir. Boylece
+  configuration, controller, service ve dahasi bilesenler aranir.
+  @ComponentScan anotasyonu @Configured anatasyonuyla beraber kullanilir ve aranacak bilesenlerin packagelarinin yeri gosterilir.
 
 https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/SpringBootApplication.html
 
@@ -99,9 +104,9 @@ Spring Boot, production seviyesinde Spring tabanlı uygulamalar oluşturmayı ko
 Spring Boot'un esas aldigi hedefler:
 
 - Tüm Spring geliştirmeleri için daha hızlı ve geniş çapta erişilebilir bir başlangıç deneyimi sağlamak,
-- Varsayılan gereklilik ve dependency'lerin optimize edilerek eklenmesi, 
+- Varsayılan gereklilik ve dependency'lerin optimize edilerek eklenmesi,
 - Gömülü sistem sunucuları, guvenlik, durum kontrolleri vb buyuk projeler icin kullanisli ozellikler saglamasi
-- XML tabanli yapilandirma ve konfigurasyona ihtiyac duymamak 
+- XML tabanli yapilandirma ve konfigurasyona ihtiyac duymamak
 
 Spring Boot'un Spring'e kiyasla avantajlarina daha derinlemesine bakarsak:
 
@@ -115,8 +120,10 @@ Spring Boot'un Spring'e kiyasla avantajlarina daha derinlemesine bakarsak:
 - Boilerplate kodlar, XML konfigurasyon ve anastosyanlarini minimize etmesi
 - Uretkenligi artirma
 
-Özetlemek gerekirse Spring Boot, standart Spring Framework'unun tüm işlevlerini içerir ve aynı zamanda uygulama geliştirmeyi çok daha kolay hale getirir. 
-Spring ile karşılaştırıldığında, tüm Spring Boot öznitelikleri otomatik olarak yapılandırıldığından, bir uygulamayı çok daha kısa sürede hazır hale getirip çalıştırabiliriz.
+Özetlemek gerekirse Spring Boot, standart Spring Framework'unun tüm işlevlerini içerir ve aynı zamanda uygulama geliştirmeyi çok daha kolay hale
+getirir.
+Spring ile karşılaştırıldığında, tüm Spring Boot öznitelikleri otomatik olarak yapılandırıldığından, bir uygulamayı çok daha kısa sürede hazır hale
+getirip çalıştırabiliriz.
 
 https://spring.getdocs.org/en-US/spring-boot-docs/getting-started/getting-started-introducing-spring-boot.html
 
@@ -128,13 +135,14 @@ https://spring.getdocs.org/en-US/spring-boot-docs/getting-started/getting-starte
 
 Spring Frameworku ApplicationContext ile yuklendigi zaman bir bean olusturur ve eger ontanimli scope degistirilmemisse bunu Singleton olarak yapar.
 
-Singleton aslinda bir yazilim mimarisi pattern’idir ve tekil anlami tasir. Bir siniftan tek bir nesne olusmasini enforce ediyorsak, 
-ister programatik olarak, ister farkli toollarla ki Spring de bunlardan birisidir, sadece tek bir nesne olusturulsun baska nesne olusturulmasin istiyorsak bu mimariye Singleton deriz. 
+Singleton aslinda bir yazilim mimarisi pattern’idir ve tekil anlami tasir. Bir siniftan tek bir nesne olusmasini enforce ediyorsak,
+ister programatik olarak, ister farkli toollarla ki Spring de bunlardan birisidir, sadece tek bir nesne olusturulsun baska nesne olusturulmasin
+istiyorsak bu mimariye Singleton deriz.
 
-Teknik olarak bakarsak Singleton adinin da cagristiracagi uzere 1 tane olan demek, unique olan demek, tek olan demek 
-dolayisiyla Spring'de Singleton olarak tanimladigimiz zaman ya da defeaultta biraktigimiz zaman 
-@Component ile anatotate edilse veya klasik XMLde de konmus olsa sinifiyla, id siyle , aliasiyle, 
-biz her gereken yerde yeni bir nesne olusturmayacak, bir tane olusturup bunu her yerde kullanacagiz. 
+Teknik olarak bakarsak Singleton adinin da cagristiracagi uzere 1 tane olan demek, unique olan demek, tek olan demek
+dolayisiyla Spring'de Singleton olarak tanimladigimiz zaman ya da defeaultta biraktigimiz zaman
+@Component ile anatotate edilse veya klasik XMLde de konmus olsa sinifiyla, id siyle , aliasiyle,
+biz her gereken yerde yeni bir nesne olusturmayacak, bir tane olusturup bunu her yerde kullanacagiz.
 Dolayisiyla tek bir instancei olan seye singleton deriz.
 
 Singletonlar multi-thread servis objeleri icin siklikla kullanilir. Web ortamlari icin request ve session scopelari vardir.
@@ -153,10 +161,10 @@ RestController sinifinin metotlarinda kullanilan anatasyonlar
 
 - @GetMapping : Get istegi
 - @PostMapping : Post istegi
-- @DeleteMapping : Delete istegi 
+- @DeleteMapping : Delete istegi
 - @PathVariable : Methodlara gecilen parametreler
 
-RestController donen datanin direkt JSON/XML olmasini otomatik saglayabiliyor. 
+RestController donen datanin direkt JSON/XML olmasini otomatik saglayabiliyor.
 
 https://docs.spring.io/spring-boot/docs/2.0.9.RELEASE/reference/html/getting-started-first-application.html#getting-started-first-application-annotations
 
@@ -166,13 +174,14 @@ https://docs.spring.io/spring-boot/docs/2.0.9.RELEASE/reference/html/getting-sta
 
 ----
 
-Spring, Java EE'ye gore daha lightweight bir uygulama gelistirme framework'udur. 
-Spring, mimari olarak bakildigi zaman frameworkleri iceren frameworklerden olusur. Uygulama gelistirmek icin bir cok framework bulunur (JSP, Hibernate vb)
+Spring, Java EE'ye gore daha lightweight bir uygulama gelistirme framework'udur.
+Spring, mimari olarak bakildigi zaman frameworkleri iceren frameworklerden olusur. Uygulama gelistirmek icin bir cok framework bulunur (JSP, Hibernate
+vb)
 
 Spring Boot ise Spring tabanli bir framework olup esas olarak REST API gelistirmek icin kullanilir.
 
-Spring'in Java EE'den en temel farki getirdigi Dependency Injection (DI) ozelligidir. 
-Spring Boot'un ise en temel farki Autoconfiguration (otomatik konfigurasyon) ile Spring'in on yuklemesini otomatik yapilandirmasidir. 
+Spring'in Java EE'den en temel farki getirdigi Dependency Injection (DI) ozelligidir.
+Spring Boot'un ise en temel farki Autoconfiguration (otomatik konfigurasyon) ile Spring'in on yuklemesini otomatik yapilandirmasidir.
 
 Spring Boot frameworkleri sayesinde developerlar development suresini ve sarfedilen eforu azaltabilir, uretkenligi artirabilir.
 
@@ -184,10 +193,10 @@ Spring Boot frameworkleri sayesinde developerlar development suresini ve sarfedi
 
 Version Control System (VCS) yazılımların versiyonlarının takip edildiği sürüm takip sistemidir.
 Git bunlardan en populer olanıdır. Git, yazılım geliştirme sırasında kaynak koddaki değişiklikleri izler.
-Programcılar arasındaki çalışmaları koordine etmek için tasarlanmıştır. 
+Programcılar arasındaki çalışmaları koordine etmek için tasarlanmıştır.
 Hız, veri bütünlüğü ve dağıtılmış, doğrusal olmayan iş akışları için destek içerir.
 
-Git bir yazılım iken GitHub ve GitLab ornegin 
+Git bir yazılım iken GitHub ve GitLab ornegin
 Git hizmeti verebilen web tabanlı grafik arayüzü olan bir Git depo barındırma hizmetidir.
 
 GitHub vb servisler kullanmak Git deneyimini artirir ve ekstra avantajlar da saglar:
@@ -197,6 +206,22 @@ GitHub vb servisler kullanmak Git deneyimini artirir ve ekstra avantajlar da sag
 - Var olan proje, bilgi ve dokumanlara kolay erisim
 - Markdown ile dokumantayon
 
+----
+
+#### Q9 - What are SOLID Principles ? Give sample usages in Java ?
+
+5 SOLID prensipi vardir.
+
+| Prensip                                   | Aciklama                                                                                                                        |
+|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| **S**ingle Responsibility Principle (SRP) | Her yazılım biriminin (sınıf, nesne, metot) tek bir sorumluluğu olmalıdır.                                                      |
+| **O**pen / Closed Principle (OCP)         | Yazılım birimleri geliştirilmeye açık, değişikliğe kapalı olmalıdır.                                                            | 
+| **L**iskov’s Substitution Principle (LSP) | Alt sınıflardan oluşturulan nesneler üst sınıfların nesneleriyle yer değiştirdiklerinde aynı davranışı göstermek zorundadırlar. |
+| **I**nterface Segregation Principle (ISP) | Herşeyi ihtiva eden interface sınıflar yerine belli bir işlemi yapan interface sınıflar oluşturulmalıdır.                       |
+| **D**ependency Inversion Principle (DIP)  | Bağımlılıklar soyut sınıflara doğru olmalıdır.                                                                                  |
+
+
+----
 
 
 
