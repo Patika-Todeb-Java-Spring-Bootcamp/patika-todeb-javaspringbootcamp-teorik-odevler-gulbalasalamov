@@ -249,6 +249,47 @@ Ornegin uygulamamizda Spring ve verilere erisim icin JPA kullanmak istiyorsak, p
 Butun starter isim ve dependency'leri icin: 
 https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using.build-systems.starters
 
+---
+
+#### Q12 -  What are the Spring Boot Annotations?
+
+---
+
+Spring Boot anatasyonlari Framework ile uygulama gelistirmeyi hizlandirmanin anahtaridir.
+Uygulamaları kontrol etmek ve tanımlamak için kullanabilecek birçok annotation vardır. 
+Bunlardan kategoriye göre sıralandirilmis en kullanışlılarindan bazıları:
+
+Basic Setup:
+- `@SpringBootApplication`
+- `@Configuration`
+- `@ComponentScan`
+- `@EnableAutoConfiguration`
+
+Request Responses:
+- `@GetMapping`
+- `@RequestMapping`
+- `@RequestParam`
+
+Component Types:
+
+- `@Component`
+- `@Service`
+- `@Repository`
+- `@Controller`
+- `@RestController`
+
+Testing:
+
+- `@SpringBootTest`
+- `@MockBean`
+- `@Validated`
+
+Misc:
+
+- `@Bean`
+- `@ConditionalOnJava`
+
+---
 
 
 
