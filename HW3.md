@@ -7,7 +7,7 @@ This homework covers answers for the questions about the following topics:
 - Comparison of Spring and Spring Boot
 - Spring Boot annotations
 
-Answers to questions are in Turkish.
+Answers to questions are in **Turkish**.
 
 ---
 
@@ -119,6 +119,25 @@ Spring Boot'un Spring'e kiyasla avantajlarina daha derinlemesine bakarsak:
 Spring ile karşılaştırıldığında, tüm Spring Boot öznitelikleri otomatik olarak yapılandırıldığından, bir uygulamayı çok daha kısa sürede hazır hale getirip çalıştırabiliriz.
 
 https://spring.getdocs.org/en-US/spring-boot-docs/getting-started/getting-started-introducing-spring-boot.html
+
+----
+
+#### Q5 - What is Singleton and where to use it?
+
+----
+
+Spring Frameworku ApplicationContext ile yuklendigi zaman bir bean olusturur ve eger ontanimli scope degistirilmemisse bunu Singleton olarak yapar.
+
+Singleton aslinda bir yazilim mimarisi pattern’idir ve tekil anlami tasir. Bir siniftan tek bir nesne olusmasini enforce ediyorsak, 
+ister programatik olarak, ister farkli toollarla ki Spring de bunlardan birisidir, sadece tek bir nesne olusturulsun baska nesne olusturulmasin istiyorsak bu mimariye Singleton deriz. 
+
+Teknik olarak bakarsak Singleton adinin da cagristiracagi uzere 1 tane olan demek, unique olan demek, tek olan demek 
+dolayisiyla Spring'de Singleton olarak tanimladigimiz zaman ya da defeaultta biraktigimiz zaman 
+@Component ile anatotate edilse veya klasik XMLde de konmus olsa sinifiyla, id siyle , aliasiyle, 
+biz her gereken yerde yeni bir nesne olusturmayacak, bir tane olusturup bunu her yerde kullanacagiz. 
+Dolayisiyla tek bir instancei olan seye singleton deriz.
+
+Singletonlar multi-thread servis objeleri icin siklikla kullanilir. Web ortamlari icin request ve session scopelari vardir.
 
 ----
 
