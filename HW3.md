@@ -98,3 +98,10 @@ Spring Boot'un esas aldigi hedefler:
 Spring ile karşılaştırıldığında, tüm Spring Boot öznitelikleri otomatik olarak yapılandırıldığından, bir uygulamayı çok daha kısa sürede hazır hale getirip çalıştırabiliriz.
 
 https://spring.getdocs.org/en-US/spring-boot-docs/getting-started/getting-started-introducing-spring-boot.html
+
+----
+
+#### Q7 - What is the primary difference between Spring and Spring Boot?
+
+----
+
