@@ -1,4 +1,4 @@
-### Homework 3
+### Homework 2
 
 This homework covers answers for the questions about the following topics:
 
