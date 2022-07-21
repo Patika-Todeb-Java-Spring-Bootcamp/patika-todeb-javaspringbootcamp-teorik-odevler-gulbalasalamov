@@ -14,5 +14,5 @@ Each file includes answers for the questions given in each homeworks.
 - [HW5] (To be added)
 - [HW6] (To be added)
 
-Note: Answers to questions are in Turkish, only.
+Note: Answers to questions are in Turkish only, as requested by Bootcamp instructor.
 
