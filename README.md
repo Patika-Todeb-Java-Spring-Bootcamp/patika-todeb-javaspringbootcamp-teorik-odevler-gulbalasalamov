@@ -12,7 +12,7 @@ Each file includes answers for the questions given in each homeworks.
 - [HW3](https://github.com/Patika-Todeb-Java-Spring-Bootcamp/patika-todeb-javaspringbootcamp-teorik-odevler-gulbalasalamov/blob/main/HW3.txt)
 - [HW4](https://github.com/Patika-Todeb-Java-Spring-Bootcamp/patika-todeb-javaspringbootcamp-teorik-odevler-gulbalasalamov/blob/main/HW4.txt)
 - [HW5] (No HW)
-- [HW6] (To be added)
+- [HW6](https://github.com/Patika-Todeb-Java-Spring-Bootcamp/patika-todeb-javaspringbootcamp-teorik-odevler-gulbalasalamov/blob/main/HW6.pdf)
 
 Note: Answers to questions are in Turkish only, as requested by Bootcamp instructor.
 
